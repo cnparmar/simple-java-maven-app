@@ -9,6 +9,6 @@ jobs:
   myjob:
     runs-on: ubuntu-latest
     name: Test
-    if: ${{ github.event.pull_request.labels.*.name,'Test01')
+    if: ${{ github.event.pull_request.labels.*.name,'Test01' }}
     steps:
      - run: echo "pass"
