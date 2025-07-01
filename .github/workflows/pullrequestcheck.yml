@@ -12,7 +12,3 @@ jobs:
     if: ${{ github.event.label.name == 'UI' }}
     steps:
      - run: echo "pass"
-
-    if: ${{ github.event.label.name != 'UI' }}
-      steps:
-      - run: echo "fail"
